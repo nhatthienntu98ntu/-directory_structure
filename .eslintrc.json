@@ -1,0 +1,92 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "prettier",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended",
+        "plugin:vue/recommended",
+        "plugin:vue/essential",
+        "@vue/typescript/recommended",
+        "@vue/prettier",
+        "@vue/prettier/@typescript-eslint"
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": false
+        },
+        "ecmaVersion": 11,
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "@typescript-eslint/interface-name-prefix": [
+            "error",
+            {
+                "prefixWithI": "always"
+            }
+        ],
+        "typescript/interface-name-prefix": [
+            {
+                "prefixWithI": "always"
+            }
+        ],
+        "vue/attribute-hyphenation": [
+            "error",
+            "never",
+            {
+                "ignore": [
+                    "append-to-body",
+                    "confirm-text",
+                    "default-expand-level",
+                    "default-panel",
+                    "default-value",
+                    "disable-branch-nodes",
+                    "disabled-date",
+                    "disabled-time",
+                    "flatten-search-results",
+                    "hour-options",
+                    "hour-step",
+                    "input-attr",
+                    "input-class",
+                    "load-options",
+                    "minute-options",
+                    "minute-step",
+                    "nw-test-id",
+                    "partial-update",
+                    "popup-class",
+                    "popup-style",
+                    "prefix-class",
+                    "range-separator",
+                    "scroll-duration",
+                    "second-options",
+                    "second-step",
+                    "show-count",
+                    "show-hour",
+                    "show-minute",
+                    "show-second",
+                    "show-time-header",
+                    "show-week-number",
+                    "time-picker-options",
+                    "time-title-format",
+                    "title-format",
+                    "value-consists-of",
+                    "value-type"
+                ]
+            }
+        ],
+        "vue/no-v-html": "off"
+    }
+}
