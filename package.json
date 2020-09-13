@@ -12,7 +12,7 @@
     ]
   },
   "scripts": {
-    "be-start": "yarn workspace @app/backend run start",
-    "fe-start": "yarn workspace @app/frontend run serve"
+    "be-start": "yarn workspace @app/otb-backend run dev",
+    "fe-start": "yarn workspace @app/otb-frontend run serve"
   }
 }

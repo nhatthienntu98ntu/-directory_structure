@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "pretty": true,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "target": "es6",
+        "baseUrl": "./app",
+        "outDir": "./dist",
+        "paths": {
+            "@/*": [
+                "*"
+            ],
+            "@api/*": [
+                "controllers/api/*"
+            ],
+            "@config/*": [
+                "config/*"
+            ],
+            "@controllers/*": [
+                "controllers/*"
+            ],
+            "@helper/*": [
+                "controllers/helper/*"
+            ],
+            "@middleware/*": [
+                "controllers/middleware/*"
+            ],
+            "@models/*": [
+                "models/*"
+            ],
+            "@routes/*": [
+                "routes/*"
+            ],
+        },
+    },
+    "include": [
+        "app/**/*.ts",
+        "app/**/*.json"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

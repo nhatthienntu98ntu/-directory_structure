@@ -1,4 +1,4 @@
-# frontend
+# @app/otb-frontend
 
 ## Project setup
 ```
