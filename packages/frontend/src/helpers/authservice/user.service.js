@@ -8,11 +8,10 @@ export const userService = {
 };
 
 function login(email, password) {
-
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ email, password }),
     };
 
     return fetch(`/users/authenticate`, requestOptions)
@@ -36,7 +35,7 @@ function register(user) {
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(user)
+        body: JSON.stringify(user),
     };
     return fetch(`/users/register`, requestOptions).then(handleResponse);
 }
@@ -44,7 +43,7 @@ function register(user) {
 function getAll() {
     const requestOptions = {
         method: 'GET',
-        headers: authHeader()
+        headers: authHeader(),
     };
     return fetch(`/users`, requestOptions).then(handleResponse);
 }
